@@ -1,0 +1,113 @@
+$font: 'Josefin Sans', sans-serif;
+
+$color-white: #EDF0F2;
+$font-color: #fff;
+$main-red: #D25C51;
+$blu: #5893B0;
+$yello: #fff600;
+$main-grey: #4D4D4D;
+$transparent-color: rgba(51,51,51,.5);
+$transparent-red: rgba(247,72,78,.5);
+$transparent-white: rgba(224, 224, 224,.5);
+
+.contact-header {
+  display: flex;
+  justify-content: center;
+
+  .contact-header-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1444655632395-39cb88c88367?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ef0d61e9b0ab39fde706a4ec9f079df3");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .contact-header-border {
+      height: 55vh;
+      width: 60vw;
+      margin-top: 25vh;
+      margin-bottom: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $transparent-color;
+      z-index: 10;
+    }
+  }
+}
+
+.contact-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 0;
+  height: 30vh;
+  width: 100%;
+  background-color: #333;
+
+  // .contact-footer-link {
+  //   display: flex;
+  //   justify-content: center;
+  //
+  //   a {
+  //     width: 15vw;
+  //     padding: 2vh;
+  //     margin-top: 2vh;
+  //     font-family: $font;
+  //     font-size: 20px;
+  //     font-weight: 300;
+  //     text-align: center;
+  //     color: #fff;
+  //     text-decoration: none;
+  //     border: 2px #fff solid;
+  //   }
+  //
+  //   a:hover {
+  //     color: $main-grey;
+  //     text-decoration: none;
+  //     border: 2px $main-grey solid;
+  //   }
+  // }
+
+  .contact-footer-text {
+    display: flex;
+    justify-content: center;
+
+    h1 {
+      width: 15vw;
+      padding: 2vh;
+      margin: 2vh;
+      font-family: $font;
+      font-size: 20px;
+      font-weight: 300;
+      text-align: center;
+      color: #fff;
+    }
+  }
+
+  .contact-footer-icons {
+    display: flex;
+    justify-content: center;
+
+
+    a {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 2vh;
+      text-decoration: none;
+      outline: none;
+      border: 0px none transparent;
+
+      i {
+        color: #fff;
+      }
+
+      i:hover {
+        color: $main-red;
+      }
+    }
+  }
+}

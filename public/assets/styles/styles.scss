@@ -1,0 +1,249 @@
+/*** imports ***/
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,700);
+
+
+// #D25C51
+// #5893B0
+// #4D4D4D
+// #EDF0F2
+
+
+
+/*** defines ***/
+$height-span: 5px;
+$width-span: 35px;
+
+$height-gradient: 100vh;
+$navbar-height: 65px;
+
+$trasparent-color: rgba(255,255,255,.1);
+
+
+$def-color: #FFF;
+$int-color: #777;
+$act-color: #444;
+
+$font: 'Josefin Sans', sans-serif;
+
+$color-white: #EDF0F2;
+$font-color: #fff;
+$main-red: #D25C51;
+$blu: #5893B0;
+$yello: #fff600;
+$main-grey: #4D4D4D;
+$transparent-color: rgba(51,51,51,.5);
+$transparent-red: rgba(247,72,78,.5);
+$transparent-white: rgba(224, 224, 224,.5);
+
+
+
+/*** general ***/
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*** menu full page ***/
+.hide {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: hidden;
+  overflow: hidden;
+  transition: opacity .5s, visibility .35s, width .35s;
+  background: #212A2F;
+
+	// Animation when nav is clicked, color fades in
+
+  &:after {
+    content: '';
+    background: #212A2F;
+    position: fixed;
+    border-radius: 100%;
+    transition: all .35s ease;
+  }
+
+	// Animation when nav is clicked.  Opens nav and list items fade in
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+
+    &:after {
+      right: 0;
+      top: 0;
+      border-radius: 0%;
+    }
+
+   li {
+      animation: fadeInRight .35s ease forwards;
+      animation-delay: .35s;
+
+      &:nth-of-type(2) {
+        animation-delay: .45s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: .55s;
+      }
+      &:nth-of-type(4) {
+        animation-delay: .55s;
+      }
+    }
+  }
+    	.menu-list {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      height: 70%;
+      top: 35%;
+      transform: translateY(-50%);
+      font-size: 50px;
+      font-family: $font;
+      text-transform: uppercase;
+      font-weight: 400;
+      text-align: center;
+      z-index: 100;
+
+      .menu-logo {
+        height: 10vh;
+        img {
+          height: 10vh;
+          background-color: $main-red;
+        }
+      }
+
+      .menu-border {
+        height: 55vh;
+        width: 60vw;
+        margin-top: 25vh;
+        margin-bottom: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        display: inline-block;
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        li {
+          display: block;
+          height: 25%;
+          height: calc(100% / 4);
+          min-height: 50px;
+          position: relative;
+          opacity: 0;
+
+          a {
+            display: block;
+            position: relative;
+            font-family: $font;
+            font-weight: 600;
+            letter-spacing: 7px;
+            color: $color-white;
+            text-decoration: none;
+            overflow: hidden;
+            padding: 8px 15px;
+            transition: all .5s;
+
+    				&:hover{
+    					color: $main_red;
+    				}
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*** sandwich ***/
+.sandwich {
+  width: $width-span;
+  height: $height-span * 5;
+  top: 15px;
+  right: 18px;
+  position: absolute;
+  padding: 20px;
+  cursor: pointer;
+
+  & span {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: $width-span;
+    height: $height-span;
+    background-color: $main-grey;
+    transition: all .35s;
+    z-index: 50;
+
+    &:nth-of-type(2) {
+      top: 30px;
+    }
+
+    &:nth-of-type(3) {
+      top: 40px;
+    }
+  }
+
+	// animates nav bar, changes from hamburger to X.
+
+  &.active {
+
+    .top {
+        transform: translateY(10px) translateX(0) rotate(45deg);
+        background: #fff;
+    }
+
+    .middle {
+      opacity: 0;
+    }
+
+    .bottom {
+      transform: translateY(-10px) translateX(0) rotate(-45deg);
+      background: #fff;
+    }
+  }
+}
+
+//sandwich ends
+
+
+
+@media (max-width: 768px){
+  .menu-list {
+    font-size: 40px;
+    li {
+      a {
+        padding: 8px 10px !important;
+      }
+    }
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}

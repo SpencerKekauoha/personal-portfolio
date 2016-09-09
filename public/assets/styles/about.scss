@@ -1,0 +1,149 @@
+$font: 'Josefin Sans', sans-serif;
+
+$color-white: #EDF0F2;
+$font-color: #fff;
+$main-red: #D25C51;
+$blu: #5893B0;
+$yello: #fff600;
+$main-grey: #4D4D4D;
+$transparent-color: rgba(51,51,51,.5);
+$transparent-red: rgba(247,72,78,.5);
+$transparent-white: rgba(224, 224, 224,.5);
+
+
+
+//////////////////
+
+// ABOUT
+
+////////////////
+
+
+.about-header {
+  display: flex;
+  justify-content: center;
+
+  .about-header-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://images.unsplash.com/photo-1443869723570-12f6b77af748?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=161847fed178cb925cebc14068a36895");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .about-header-border {
+      height: 55vh;
+      width: 60vw;
+      margin-top: 25vh;
+      margin-bottom: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $transparent-color;
+      z-index: 10;
+    }
+  }
+}
+
+.about-profile-section {
+  .about-logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    .about-logo-container {
+      display: flex;
+      justify-content: flex-start;
+
+      img {
+        height: 70vh;
+        margin-top: 35vh;
+        margin-left: 15%;
+      }
+    }
+    .about-logo-info-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 35vh;
+
+
+      h1 {
+        width: 40vh;
+        margin-bottom: 2vh;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 50px;
+        letter-spacing: 5px;
+        font-weight: 600;
+        color: #4D4D4D;
+      }
+
+      p{
+        width: 40vh;
+        margin-bottom: 2vh;
+        font-family: $font;
+        font-size: 20px;
+        font-weight: 300;
+        color: $main-grey;
+      }
+    }
+  }
+}
+
+#bw-icon-container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 40vh;
+
+      a {
+
+        i {
+          color: $main-grey;
+          margin: 1vh;
+        }
+
+        i:hover {
+          color: $main-red;
+        }
+      }
+    }
+
+  .about-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    height: 20vh;
+    width: 100%;
+    background-color: #333;
+
+    .about-footer-icons {
+      display: flex;
+      justify-content: center;
+
+      a {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 2vh;
+        text-decoration: none;
+        outline: none;
+        border: 0px none transparent;
+
+        i {
+          color: #fff;
+        }
+
+        i:hover {
+          color: $main-red;
+        }
+      }
+    }
+
+
+  }

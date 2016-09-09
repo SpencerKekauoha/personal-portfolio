@@ -1,0 +1,243 @@
+$font: 'Josefin Sans', sans-serif;
+
+$color-white: #EDF0F2;
+$font-color: #fff;
+$main-red: #D25C51;
+$blu: #5893B0;
+$yello: #fff600;
+$main-grey: #4D4D4D;
+$transparent-color: rgba(51,51,51,.5);
+$transparent-red: rgba(247,72,78,.5);
+$transparent-white: rgba(224, 224, 224,.5);
+
+.port-header {
+  .port-vid-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+
+
+    }
+    .port-border-container {
+      height: 55vh;
+      width: 60vw;
+      margin-top: 25vh;
+      margin-bottom: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $transparent-color;
+      z-index: 10;
+
+      h1 {
+        font-family: $font;
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 3px;
+        color: $font-color;
+      }
+    }
+    .port-yui-container {
+      height: 55vh;
+      width: 60vw;
+      margin-bottom: 50vh;
+      background-image: url("../images/yui.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 10;
+
+      div{
+        display: flex;
+        justify-content: center;
+        height: 55vh;
+        width: 60vw;
+        background-color: $transparent-color;
+        transition: all 0.35s ease;
+        opacity: 0;
+
+        p {
+          width: 30vh;
+          height: 10vh;
+          padding-top: 3vh;
+          align-self: center;
+          font-family: "Alegreya Sans", sans-serif;
+          font-size: 20px;
+          font-weight: 600;
+          letter-spacing: 3px;
+          text-align: center;
+          color: #fff;
+          border: 2px #fff solid;
+
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+
+          a:hover {
+            text-decoration: none;
+            color: rgb(171, 171, 171);
+          }
+        }
+      }
+
+      div:hover {
+        opacity: 1;
+      }
+    }
+
+    .port-hana-container {
+      height: 55vh;
+      width: 60vw;
+      margin-bottom: 50vh;
+      background-image: url("../images/hana.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 10;
+
+      div{
+        display: flex;
+        justify-content: center;
+        height: 55vh;
+        width: 60vw;
+        background-color: $transparent-color;
+        transition: all 0.35s ease;
+        opacity: 0;
+
+        p {
+          width: 30vh;
+          height: 10vh;
+          padding-top: 3vh;
+          align-self: center;
+          font-family: "Alegreya Sans", sans-serif;
+          font-size: 20px;
+          font-weight: 600;
+          letter-spacing: 3px;
+          text-align: center;
+          color: #fff;
+          border: 2px #fff solid;
+
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+
+          a:hover {
+            text-decoration: none;
+            color: rgb(171, 171, 171);
+          }
+        }
+      }
+
+      div:hover {
+        opacity: 1;
+      }
+    }
+
+    .port-weather-container {
+      height: 55vh;
+      width: 60vw;
+      margin-bottom: 50vh;
+      background-image: url("../images/weather.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 10;
+
+      div{
+        display: flex;
+        justify-content: center;
+        height: 55vh;
+        width: 60vw;
+        background-color: $transparent-color;
+        transition: all 0.35s ease;
+        opacity: 0;
+
+        p {
+          width: 30vh;
+          height: 10vh;
+          padding-top: 3vh;
+          align-self: center;
+          font-family: "Alegreya Sans", sans-serif;
+          font-size: 20px;
+          font-weight: 600;
+          letter-spacing: 3px;
+          text-align: center;
+          color: #fff;
+          border: 2px #fff solid;
+
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+
+          a:hover {
+            text-decoration: none;
+            color: rgb(171, 171, 171);
+          }
+        }
+      }
+
+      div:hover {
+        opacity: 1;
+      }
+    }
+
+    .port-domo-container {
+      height: 55vh;
+      width: 60vw;
+      margin-bottom: 25vh;
+      background-image: url("../images/domo.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 10;
+
+      div{
+        display: flex;
+        justify-content: center;
+        height: 55vh;
+        width: 60vw;
+        background-color: $transparent-color;
+        transition: all 0.35s ease;
+        opacity: 0;
+
+        p {
+          width: 30vh;
+          height: 10vh;
+          padding-top: 3vh;
+          align-self: center;
+          font-family: "Alegreya Sans", sans-serif;
+          font-size: 20px;
+          font-weight: 600;
+          letter-spacing: 3px;
+          text-align: center;
+          color: #fff;
+          border: 2px #fff solid;
+
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+
+          a:hover {
+            text-decoration: none;
+            color: rgb(171, 171, 171);
+          }
+        }
+      }
+
+      div:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
